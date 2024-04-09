@@ -1,0 +1,184 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW Car</title>
+    <style>
+        body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  
+  background-image: url("https://imgd.aeplcdn.com/1920x1080/n/cw/ec/135681/xm-exterior-right-front-three-quarter.jpeg?isig=0&q=80&q=80");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+}
+
+h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.menu-toggle {
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.5rem;
+}
+
+#side-menu {
+  position: fixed;
+  top: 0;
+  left: -100%; /* Initially hidden */
+  width: 200px;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+#side-menu.active {
+  left: 0; /* Slide menu into view */
+}
+
+#side-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 1rem;
+}
+
+#side-menu li a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+
+#side-menu li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+main {
+  padding: 2rem;
+}
+
+.hero {
+  text-align: center;
+  color: white;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.hero button {
+  background-color: #fff;
+  color: #000;
+  padding: 1rem 2rem;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.hero button:hover {
+  background-color: #ddd;
+}
+
+.models {
+  display: flex; /* Arrange model sections side-by-side */
+  flex-wrap: wrap; /* Allow models to wrap to next line if needed */
+  margin-top: 2rem;
+}
+
+/* Add styles for individual model sections here */
+.model {
+  width: calc(33% - 1.5rem); /* Adjust width based on number of models per row */
+  margin: 0.75rem;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+.model img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.model h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.model p {
+  font-size: 0.9rem;
+}
+
+    </style>
+</head>
+<body>
+  <header>
+    <h1>BMW Car</h1>
+    <button class="menu-toggle" id="menu-toggle">&#9776;</button>
+  </header>
+
+  <nav id="side-menu">
+    <ul>
+
+  <li><a href="C:\Users\HP\OneDrive\Desktop\tarun1.html">Home</a></li>
+   <li>
+    <a href="#">Cars</a>
+    <ul>
+        <li><a href='https://www.bmw.com/en/index.html'>BMW</a></li>
+        <li><a href="https://www.bmw.com/en/automotive-life.html">Series</a></li>
+        <li><a href="https://www.bmw.com/en/automotive-life.html">X series</a></li>
+    </ul>
+</li>
+
+      <li><a href="https://www.bmw.com/en/automotive-life.html">Accessories</a></li>
+      <li><a href="https://www.bmw.com/en/index.html">About Us</a></li>
+      
+    <li><a href="https://www.bmw.com/en/forms/testdrive.html">Book a ride</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="hero">
+    
+      <p>Experience the timeless thrill of BMW Cars.</p>
+        
+    </section>
+
+   
+  </main>
+
+  <script>
+  const menuToggle = document.getElementById('menu-toggle');
+    const sideMenu = document.getElementById('side-menu');
+    
+    menuToggle.addEventListener('click', function() {
+      sideMenu.classList.toggle('active');
+    });
+    </script>
+</body>
+</html>
